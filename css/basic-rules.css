@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;9000&display=swap');
+
+:root {
+  --primary-color: rgb(49, 69, 132) !important;
+  --secondary-color: rgb(255, 57, 70) !important;
+  --black-color: #000000 !important;
+  --white-color: #ffffff !important;
+}
+
+/*  ---------------------------- Basic Rules CSS Start's Here -----------------------*/
+* {
+  box-sizing:border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  line-height: 1.6;
+  color: rgb(49, 69, 132);
+}
+
+ul{
+  list-style-type:none;
+}
+a{
+  text-decoration: none;
+  color: rgb(49, 69, 132) !important;
+}
+
+h1, h2 {
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+p{
+  margin: 10px 0;
+}
+img{
+  width: 100%; /* height 100% of whatever container is*/
+  padding: 5%
+}
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 0px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 10px;
+  transition: transform 0.2s ease-in;
+}
+
+.card:hover{
+  transform: translateY(-15px);
+ 
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  cursor: pointer;
+  background-color: rgb(255, 57, 70); 
+  color: #ffffff !important;
+  border: none;
+  border-radius: 50px;
+}
+
+.btn-secondary {
+  background-color: #ffffff;
+  color: rgb(49, 69, 132) !important;
+  font-weight: 900;
+}
+
+/* .btn-outline {
+  background-color: transparent;
+  border: 1px #fff solid;
+} */
+
+.btn:hover{
+  transform: scale(0.98)
+}
+
+/* backgrounds and coloured button */
+
+.bg-primary, .btn-primary {
+  background-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.bg-secondary, .btn-secondary {
+  background-color: #ffffff !important;
+  color: rgb(49, 69, 132) !important;
+}
+
+.text-primary-color{
+  color: var(--primary-color);
+}
+.text-secondary-color{
+  color: rgb(255, 76, 70);;
+}
+.text-black {
+  color: var(--black-color);
+}
+.text-white{
+  color: var(--white-color)!important;
+}
+
+/* Text-sizes  */
+.lead {
+  font-size: 20px;
+}
+.sm {
+  font-size: 1rem;
+}
+.md{
+  font-size: 1.5rem;
+}
+.lg{
+  font-size: 2.5rem;
+}
+.xl{
+  font-size: 4rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-start {
+  text-align: left;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* height 100% of whatever container is*/
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.grid-3{
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-flex-start {
+  align-items: flex-start;
+}
+
+/* Margins */
+.my-1{
+  margin: 1rem 0;
+}
+.my-2{
+  margin: 1.5rem 0;
+}
+.my-3{
+  margin: 2rem 0;
+}
+.my-4{
+  margin: 3rem 0;
+}
+.my-5{
+  margin: 4rem 0;
+}
+
+.m-1{
+  margin: 1rem;
+}
+.m-2{
+  margin: 1.5rem;
+}
+.m-3{
+  margin: 2rem;
+}
+.m-4{
+  margin: 3rem;
+}
+.m-5{
+  margin: 4rem;
+}
+
+.mt-1{
+  margin-top: 0.5rem;
+}
+.mt-2{
+  margin-top: 1.5rem;
+}
+.mt-3{
+  margin-top: 2rem;
+}
+.mt-4{
+  margin-top: 3rem;
+}
+.mt-5{
+  margin-top: 4rem;
+}
+
+/* Paddings */
+.py-1{
+  padding: 1rem 0;
+}
+.py-2{
+  padding: 1.5rem 0;
+}
+.py-3{
+  padding: 2rem 0;
+}
+.py-4{
+  padding: 3rem 0;
+}
+.py-5{
+  padding: 4rem 0;
+}
+
+.px-1{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.px-2{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.px-3{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.px-4{
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.px-5{
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.p-1{
+  padding: 1rem;
+}
+.p-1{
+  padding: 1.5rem;
+}
+.p-1{
+  padding: 2rem;
+}
+.p-1{
+  padding: 3rem;
+}
+.p-1{
+  padding: 4rem;
+}
+
+.padding-top-10{
+  padding-top: 10px;
+}
+.padding-top-20{
+  padding-top: 20px;
+}
+.padding-top-30{
+  padding-top: 30px;
+}
+.padding-top-40{
+  padding-top: 40px;
+}
+
+.padding-top-50{
+  padding-top: 50px;
+}
+
+.margin-top-10{
+  margin-top: 10px;
+}
+
+.margin-top-20{
+  margin-top: 20px;
+}
+
+.margin-top-30{
+  margin-top: 30px;
+}
+
+.margin-top-40{
+  margin-top: 40px;
+}
+
+.margin-top-50{
+  margin-top: 50px;
+}
+
+.font-weight-300{
+  font-weight: 300;
+}
+.font-weight-400{
+  font-weight: 400;
+}
+.font-weight-500{
+  font-weight: 500;
+}
+.font-weight-600{
+  font-weight: 600;
+}
+.font-weight-700{
+  font-weight: 700;
+}
+.font-weight-800{
+  font-weight: 800;
+}
+.font-weight-900{
+  font-weight: 900;
+}
+/*  ================== ========== Basic Rules CSS end's Here =========== ========================== */

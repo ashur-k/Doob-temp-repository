@@ -1,0 +1,330 @@
+/*  ---------------------------- Navbar Start's Here -----------------------*/
+
+.navbar {
+  background-color: var(white-color);
+  height: 80px;
+}
+
+.navbar .container {
+  max-width: 1600px;
+}
+
+.navbar-right-contact-us {
+  margin-left: 35px!important;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  padding-left: 4px;
+  padding-right: 4px;
+  color: rgb(255, 57, 70);
+}
+
+/* red underline 2"oo"s of logo */
+
+.logo-center-border {
+  border-bottom: 5px solid rgb(255, 57, 70);
+}
+
+.navbar ul {
+  display: flex;
+  /* Makes navbar items go horizontal */
+  margin-left: 145px !important;
+}
+
+.navbar a {
+  font-size: 22px;
+  padding: 10px;
+  margin: 0 5px;
+  color: rgb(49, 69, 132) !important;
+}
+
+.navbar a:hover {
+  border-bottom: 5px solid var(secondary-color);
+}
+
+.navbar .flex {
+  justify-content: flex-start;
+}
+
+/*  ---------------------------- ShowCase Start's Here -----------------------*/
+
+.showcase {
+  height: 600px;
+  position: relative;
+}
+
+.showcase-text h1 {
+  max-width: 460px;
+  word-spacing: 5px;
+  letter-spacing: 2px;
+}
+
+.showcase h1 {
+  font-size: 46px;
+  font-weight: 600;
+}
+
+.showcase p {
+  margin: 20px 0;
+}
+
+.showcase .grid {
+  overflow: visible;
+  grid-template-columns: 45% 55%;
+  gap: 30px;
+}
+
+/*  ---------------------------- Services Start's Here -----------------------*/
+
+.services {
+  padding-top: 10px;
+}
+
+.services-heading {
+  max-width: 360px;
+  margin-right: auto;
+}
+
+.services .grid h2 {
+  font-size: 40px;
+}
+
+.services .grid h3 {
+  font-size: 26px;
+}
+
+.services .grid p {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.card-img-1 {
+  width: 30% !important;
+}
+
+.card-img-2 {
+  width: 38% !important;
+}
+
+/* .card-flex-wrap {
+  flex-wrap: wrap;
+} */
+
+/*  ---------------------------- Customer-reviews Start's Here -----------------------*/
+
+/* .customer-reviews .grid{
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.customer-reviews .grid > *:first-child {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+} */
+
+.customer-reviews .grid {
+  grid-template-columns: 3fr 3fr;
+  gap: 60px;
+  align-items: stretch;
+}
+
+.customer-reviews .container {
+  padding: 0px;
+}
+
+.customer-reviews img {
+  padding: 0;
+  width: 100%;
+  justify-self: first baseline;
+}
+
+.customer-reviews p {
+  margin-top: 40px;
+}
+
+/* Footer */
+
+.footer .grid {
+  grid-template-columns: 1fr;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+}
+
+.background-stripes {
+  margin-left: 10%;
+  margin-right: 10%;
+  background: repeating-linear-gradient( to right, rgb(49, 69, 132), 30px, rgb(70, 78, 144) 30px, rgb(70, 78, 144) 10px, rgb(70, 78, 144) 90px);
+}
+
+.grid-flex-start {
+  align-items: flex-start;
+}
+
+.footer nav ul {
+  display: flex;
+  /* Makes navbar items go horizontal */
+  justify-content: center;
+}
+
+footer nav ul a {
+  color: #fff !important;
+}
+
+footer .social a {
+  margin: 0 40px;
+  font-size: 1.75rem;
+}
+
+footer .social a i {
+  color: #fff !important;
+}
+
+/* Media Queries Tablets and under  max-width: 1024px*/
+
+@media (max-width: 1024px) {
+  .navbar {
+    height: 100px;
+  }
+  .third-navbar-en-contact-us {
+    margin-left: 100px!important
+  }
+  .navbar ul {
+    margin-left: 25px !important;
+  }
+  .navbar a {
+    font-size: 24px;
+    font-weight: 500;
+    padding: 10px;
+    margin: 0px 5px;
+    color: rgb(49, 69, 132) !important;
+  }
+  .ipad-hide {
+    display: none;
+  }
+  .showcase .container, .services .container {
+    padding-left: 70px !important;
+    padding-right: 70px !important;
+  }
+  .customer-reviews .container {
+    padding-left: 60px !important;
+    padding-right: 60px !important;
+  }
+  .img {
+    padding: 5px;
+  }
+  .card-img-1 {
+    width: 22% !important;
+  }
+  .card-img-2 {
+    width: 27% !important;
+  }
+  .customer-reviews p {
+    margin-top: 0px;
+  }
+}
+
+/* Media Queries Tablets and under */
+
+@media(max-width: 768px) {
+  .customer-reviews .container {
+    padding: 0 20px;
+  }
+  .navbar ul {
+    margin: auto!important;
+  }
+  .grid, .showcase .grid, .services .grid, .customer-reviews .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .showcase {
+    height: auto;
+  }
+  .showcase-text {
+    margin-top: 40px;
+  }
+  .background-stripes {
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+}
+
+/* Media Queries Mobile */
+
+@media(max-width: 500px) {
+  .navbar {
+    height: 100px;
+  }
+  .navbar .flex {
+    flex-direction: column;
+    overflow: hidden !important;
+  }
+  .navbar ul {
+    margin: auto!important;
+  }
+  .navbar ul li a {
+    font-size: 16px;
+    text-align: center;
+  }
+  .navbar a {
+    padding: 5px;
+    margin: 0 5px;
+    font-weight: 600;
+  }
+  .showcase .container, .services .container, .customer-reviews .container {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  .showcase-text h1 {
+    font-size: 32px !important;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+  }
+  .services .grid h2 {
+    font-size: 30px;
+  }
+  .services-card-mobile-margin-top {
+    margin-top: 0px;
+  }
+  .services .grid h3 {
+    font-size: 20px;
+  }
+  .card-img-1 {
+    width: 25% !important;
+  }
+  .card-img-2 {
+    width: 25% !important;
+  }
+  .customer-reviews .grid {
+    gap: 0;
+  }
+  .customer-reviews p {
+    margin-top: 0px;
+  }
+  .mobile-hide {
+    display: none;
+  }
+  .lg {
+    font-size: 1.5rem;
+  }
+  .footer nav ul {
+    flex-direction: column;
+    margin: 5px;
+  }
+  .footer nav ul li {
+    flex-direction: column;
+    margin: 5px;
+  }
+  .mobile-margin-auto {
+    margin: auto;
+  }
+  footer .social a {
+    margin: 0 10px;
+    font-size: 1.5rem;
+  }
+  .background-stripes {
+    margin-left: 10%;
+    margin-right: 10%;
+    background: repeating-linear-gradient( to right, rgb(49, 69, 132), 30px, rgb(70, 78, 144) 30px, rgb(70, 78, 144) 10px, rgb(70, 78, 144) 90px);
+  }
+}
