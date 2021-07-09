@@ -10,10 +10,11 @@
 }
 
 .navbar-right-contact-us {
-  margin-left: 35px!important;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-  padding-left: 4px;
-  padding-right: 4px;
+  margin: auto;
+  margin-left:25px!important;
+  box-shadow: 5px 6px 15px 5px rgba(0, 0, 0, 0.2);
+  padding: 3px 3px;
+  
   color: rgb(255, 57, 70);
 }
 
@@ -137,7 +138,7 @@
 }
 
 .customer-reviews p {
-  margin-top: 40px;
+  margin-top: 0px !important;
 }
 
 /* Footer */
@@ -233,6 +234,10 @@ footer .social a i {
   .navbar ul {
     margin: auto!important;
   }
+  .navbar .flex {
+    margin: auto;
+    overflow: hidden;
+  }
   .grid, .showcase .grid, .services .grid, .customer-reviews .grid {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -246,6 +251,9 @@ footer .social a i {
   .background-stripes {
     margin-left: 8%;
     margin-right: 8%;
+  }
+  .mobile-hide{
+    display: none;
   }
 }
 
